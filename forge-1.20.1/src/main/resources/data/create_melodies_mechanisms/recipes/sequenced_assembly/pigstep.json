@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_melodies_mechanisms:netherrack_disc_plate"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "minecraft:music_disc_pigstep"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:netherrack_disc_plate"
+        },
+        {
+		  "item": "minecraft:gold_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_melodies_mechanisms:pigstep_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:pigstep_disc_plate"
+        },
+        {
+		  "item": "minecraft:gold_ingot"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_melodies_mechanisms:pigstep_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:pigstep_disc_plate"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:music_disc_pigstep"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create_melodies_mechanisms:pigstep_disc_plate"
+  }
+}

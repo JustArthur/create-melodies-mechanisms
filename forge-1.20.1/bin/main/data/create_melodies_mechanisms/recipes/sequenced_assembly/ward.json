@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_melodies_mechanisms:deepslate_disc_plate"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "minecraft:music_disc_ward"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:deepslate_disc_plate"
+        },
+        {
+		  "item": "minecraft:moss_block"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_melodies_mechanisms:ward_disc_plat"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:ward_disc_plat"
+        },
+        {
+		  "item": "minecraft:emerald"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_melodies_mechanisms:ward_disc_plat"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:ward_disc_plat"
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:music_disc_ward"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create_melodies_mechanisms:ward_disc_plat"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_melodies_mechanisms:deepslate_disc_plate"
+  },
+  "results": [
+    {
+      "id": "minecraft:music_disc_mall"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:deepslate_disc_plate"
+        },
+        {
+		  "item": "minecraft:amethyst_shard"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:mall_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:mall_disc_plate"
+        },
+        {
+		  "item": "minecraft:lapis_lazuli"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:mall_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:mall_disc_plate"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:music_disc_mall"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_melodies_mechanisms:mall_disc_plate"
+  }
+}

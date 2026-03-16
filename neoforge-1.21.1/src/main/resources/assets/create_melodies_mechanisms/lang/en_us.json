@@ -1,0 +1,29 @@
+{
+  "itemGroup.create_melodies_mechanisms": "Create: Melodies & Mechanisms",
+
+  "item.create_melodies_mechanisms.deepslate_disc_plate": "Deepslate Disc Plate",
+  "item.create_melodies_mechanisms.terracotta_disc_plate": "Terracotta Disc Plate",
+  "item.create_melodies_mechanisms.netherrack_disc_plate": "Netherrack Disc Plate",
+  "item.create_melodies_mechanisms.copper_disc_plate": "Copper Disc Plate",
+  "item.create_melodies_mechanisms.oxidized_disc_plate": "Oxidized Disc Plate",
+
+  "item.create_melodies_mechanisms.five_disc_plate": "5 Disc Plate",
+  "item.create_melodies_mechanisms.eleven_disc_plate": "11 Disc Plate",
+  "item.create_melodies_mechanisms.thirteen_disc_plate": "13 Disc Plate",
+  "item.create_melodies_mechanisms.cat_disc_plate": "Cat Disc Plate",
+  "item.create_melodies_mechanisms.blocks_disc_plate": "Blocks Disc Plate",
+  "item.create_melodies_mechanisms.chirp_disc_plate": "Chirp Disc Plate",
+  "item.create_melodies_mechanisms.far_disc_plate": "Far Disc Plate",
+  "item.create_melodies_mechanisms.mellohi_disc_plate": "Mellohi Disc Plate",
+  "item.create_melodies_mechanisms.mall_disc_plate": "Mall Disc Plate",
+  "item.create_melodies_mechanisms.stal_disc_plate": "Stal Disc Plate",
+  "item.create_melodies_mechanisms.strad_disc_plate": "Strad Disc Plate",
+  "item.create_melodies_mechanisms.ward_disc_plate": "Ward Disc Plate",
+  "item.create_melodies_mechanisms.wait_disc_plate": "Wait Disc Plate",
+  "item.create_melodies_mechanisms.otherside_disc_plate": "Otherside Disc Plate",
+  "item.create_melodies_mechanisms.pigstep_disc_plate": "Pigstep Disc Plate",
+  "item.create_melodies_mechanisms.relic_disc_plate": "Relic Disc Plate",
+  "item.create_melodies_mechanisms.creator_disc_plate": "Creator Disc Plate",
+  "item.create_melodies_mechanisms.creator_box_disc_plate": "Creator Music Box Disc Plate",
+  "item.create_melodies_mechanisms.precipice_disc_plate": "Precipice Disc Plate"
+}

@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_melodies_mechanisms:deepslate_disc_plate"
+  },
+  "results": [
+    {
+      "id": "minecraft:music_disc_strad"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:deepslate_disc_plate"
+        },
+        {
+		  "item": "minecraft:quartz"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:strad_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:strad_disc_plate"
+        },
+        {
+		  "item": "minecraft:quartz"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:strad_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:strad_disc_plate"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:music_disc_strad"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_melodies_mechanisms:strad_disc_plate"
+  }
+}

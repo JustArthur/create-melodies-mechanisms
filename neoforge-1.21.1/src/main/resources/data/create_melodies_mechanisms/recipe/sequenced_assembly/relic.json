@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_melodies_mechanisms:terracotta_disc_plate"
+  },
+  "results": [
+    {
+      "id": "minecraft:music_disc_relic"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:terracotta_disc_plate"
+        },
+        {
+		  "item": "minecraft:diamond"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:relic_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:relic_disc_plate"
+        },
+        {
+		  "item": "minecraft:lapis_lazuli"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:relic_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:relic_disc_plate"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:music_disc_relic"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_melodies_mechanisms:relic_disc_plate"
+  }
+}

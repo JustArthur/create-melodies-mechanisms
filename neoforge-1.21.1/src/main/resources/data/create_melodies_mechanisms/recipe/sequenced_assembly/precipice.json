@@ -1,0 +1,77 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_melodies_mechanisms:oxidized_disc_plate"
+  },
+  "results": [
+    {
+      "id": "minecraft:music_disc_precipice"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:oxidized_disc_plate"
+        },
+        {
+		  "item": "minecraft:copper_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:precipice_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:precipice_disc_plate"
+        },
+        {
+		  "item": "minecraft:oxidized_copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:precipice_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:precipice_disc_plate"
+        },
+        {
+          "item": "minecraft:honeycomb"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:precipice_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:precipice_disc_plate"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:music_disc_precipice"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_melodies_mechanisms:precipice_disc_plate"
+  }
+}

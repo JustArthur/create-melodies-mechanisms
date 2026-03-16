@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "create_melodies_mechanisms:copper_disc_plate"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_melodies_mechanisms:oxidized_disc_plate"
+    }
+  ]
+}

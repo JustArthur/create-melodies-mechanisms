@@ -44,7 +44,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        CreateMelodiesMechanisms.LOGGER.info("Registering Mod Items for " + CreateMelodiesMechanisms.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }

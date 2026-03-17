@@ -1,6 +1,8 @@
 package net.suaptinstallkuma.create_melodies_mechanisms;
 
+import net.neoforged.fml.ModList;
 import net.suaptinstallkuma.create_melodies_mechanisms.item.ModItems;
+import net.suaptinstallkuma.create_melodies_mechanisms.item.ModItemsCompat;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -26,7 +28,13 @@ public class CreateMelodiesMechanisms {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        // All items
         ModItems.register(modEventBus);
+
+        // Check if Vanilla Backport mod is loaded
+        if(ModList.get().isLoaded("vanillabackport")) {
+            ModItemsCompat.registerCompatVanillaBackport(modEventBus);
+        }
 
         modEventBus.addListener(this::addCreative);
     }
@@ -43,25 +51,9 @@ public class CreateMelodiesMechanisms {
             event.accept(ModItems.COPPER_DISC_PLATE);
             event.accept(ModItems.OXIDIZED_DISC_PLATE);
 
-            event.accept(ModItems.BLOCKS_DISC_PLATE);
-            event.accept(ModItems.CAT_DISC_PLATE);
-            event.accept(ModItems.CHIRP_DISC_PLATE);
-            event.accept(ModItems.ELEVEN_DISC_PLATE);
-            event.accept(ModItems.FAR_DISC_PLATE);
-            event.accept(ModItems.FIVE_DISC_PLATE);
-            event.accept(ModItems.MELLOHI_DISC_PLATE);
-            event.accept(ModItems.MALL_DISC_PLATE);
-            event.accept(ModItems.OTHERSIDE_DISC_PLATE);
-            event.accept(ModItems.PIGSTEP_DISC_PLATE);
-            event.accept(ModItems.RELIC_DISC_PLATE);
-            event.accept(ModItems.STAL_DISC_PLATE);
-            event.accept(ModItems.STRAD_DISC_PLATE);
-            event.accept(ModItems.THIRTEEN_DISC_PLATE);
-            event.accept(ModItems.WAIT_DISC_PLATE);
-            event.accept(ModItems.WARD_DISC_PLATE);
-            event.accept(ModItems.CREATOR_DISC_PLATE);
-            event.accept(ModItems.CREATOR_BOX_DISC_PLATE);
-            event.accept(ModItems.PRECIPICE_BOX_DISC_PLATE);
+            if(ModList.get().isLoaded("vanillabackport")) {
+                event.accept(ModItemsCompat.CALCITE_DISC_PLATE);
+            }
         }
     }
 

@@ -8,11 +8,13 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.suaptinstallkuma.createmelodiesmechanisms.item.ModItems;
+import net.suaptinstallkuma.createmelodiesmechanisms.item.ModItemsCompat;
 import org.slf4j.Logger;
 
 @Mod(CreateMelodiesMechanisms.MOD_ID)
@@ -24,6 +26,10 @@ public class CreateMelodiesMechanisms {
         IEventBus modEventBus = context.getModEventBus();
 
         ModItems.register(modEventBus);
+
+        if(ModList.get().isLoaded("vanillabackport")) {
+            ModItemsCompat.register(modEventBus);
+        }
 
         modEventBus.addListener(this::commonSetup);
 
@@ -41,22 +47,9 @@ public class CreateMelodiesMechanisms {
             event.accept(ModItems.NETHERRACK_DISC_PLATE);
             event.accept(ModItems.TERRACOTTA_DISC_PLATE);
 
-            event.accept(ModItems.BLOCKS_DISC_PLATE);
-            event.accept(ModItems.CAT_DISC_PLATE);
-            event.accept(ModItems.CHIRP_DISC_PLATE);
-            event.accept(ModItems.ELEVEN_DISC_PLATE);
-            event.accept(ModItems.FAR_DISC_PLATE);
-            event.accept(ModItems.FIVE_DISC_PLATE);
-            event.accept(ModItems.MALL_DISC_PLATE);
-            event.accept(ModItems.MELLOHI_DISC_PLATE);
-            event.accept(ModItems.OTHERSIDE_DISC_PLATE);
-            event.accept(ModItems.PIGSTEP_DISC_PLATE);
-            event.accept(ModItems.RELIC_DISC_PLATE);
-            event.accept(ModItems.STAL_DISC_PLATE);
-            event.accept(ModItems.STRAD_DISC_PLATE);
-            event.accept(ModItems.THIRTEEN_DISC_PLATE);
-            event.accept(ModItems.WAIT_DISC_PLATE);
-            event.accept(ModItems.WARD_DISC_PLATE);
+            if(ModList.get().isLoaded("vanillabackport")) {
+                event.accept(ModItemsCompat.CALCITE_DISC_PLATE);
+            }
         }
     }
 

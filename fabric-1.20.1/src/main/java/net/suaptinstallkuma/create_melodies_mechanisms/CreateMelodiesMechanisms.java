@@ -2,7 +2,8 @@ package net.suaptinstallkuma.create_melodies_mechanisms;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.suaptinstallkuma.create_melodies_mechanisms.item.ModItems;
+import net.fabricmc.loader.api.FabricLoader;
+import net.suaptinstallkuma.create_melodies_mechanisms.item.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,5 +14,9 @@ public class CreateMelodiesMechanisms implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+
+		if(FabricLoader.getInstance().isModLoaded("vanillabackport")) {
+			ModItemsCompat.registerModItemsCompat();
+		}
 	}
 }

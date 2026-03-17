@@ -9,8 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.suaptinstallkuma.createmelodiesmechanisms.CreateMelodiesMechanisms;
 
 public class ModItems {
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, CreateMelodiesMechanisms.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CreateMelodiesMechanisms.MOD_ID);
 
     public static final RegistryObject<Item> DEEPSLATE_DISC_PLATE = ITEMS.register("deepslate_disc_plate", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> NETHERRACK_DISC_PLATE = ITEMS.register("netherrack_disc_plate", () -> new Item(new Item.Properties()));

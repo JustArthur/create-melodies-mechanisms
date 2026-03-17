@@ -6,6 +6,7 @@
   "item.create_melodies_mechanisms.netherrack_disc_plate": "Netherrack Disc Plate",
   "item.create_melodies_mechanisms.copper_disc_plate": "Copper Disc Plate",
   "item.create_melodies_mechanisms.oxidized_disc_plate": "Oxidized Disc Plate",
+  "item.create_melodies_mechanisms.calcite_disc_plate": "Calcite Disc Plate",
 
   "item.create_melodies_mechanisms.five_disc_plate": "5 Disc Plate",
   "item.create_melodies_mechanisms.eleven_disc_plate": "11 Disc Plate",
@@ -25,5 +26,7 @@
   "item.create_melodies_mechanisms.relic_disc_plate": "Relic Disc Plate",
   "item.create_melodies_mechanisms.creator_disc_plate": "Creator Disc Plate",
   "item.create_melodies_mechanisms.creator_box_disc_plate": "Creator Music Box Disc Plate",
-  "item.create_melodies_mechanisms.precipice_disc_plate": "Precipice Disc Plate"
+  "item.create_melodies_mechanisms.precipice_disc_plate": "Precipice Disc Plate",
+  "item.create_melodies_mechanisms.lava_chicken_disc_plate": "Lava Chicken Disc Plate",
+  "item.create_melodies_mechanisms.tears_disc_plate": "Tears Disc Plate"
 }

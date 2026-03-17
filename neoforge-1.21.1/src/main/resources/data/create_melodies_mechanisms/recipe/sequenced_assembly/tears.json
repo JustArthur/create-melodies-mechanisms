@@ -1,0 +1,67 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "vanillabackport"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_melodies_mechanisms:calcite_disc_plate"
+  },
+  "results": [
+    {
+      "id": "minecraft:music_disc_tears"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:calcite_disc_plate"
+        },
+        {
+		  "item": "minecraft:ghast_tear"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:tears_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:tears_disc_plate"
+        },
+        {
+		  "item": "minecraft:ghast_tear"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_melodies_mechanisms:tears_disc_plate"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_melodies_mechanisms:tears_disc_plate"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:music_disc_tears"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_melodies_mechanisms:tears_disc_plate"
+  }
+}

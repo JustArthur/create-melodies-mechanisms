@@ -4,6 +4,7 @@
   "item.create_melodies_mechanisms.deepslate_disc_plate": "Deepslate Disc Plate",
   "item.create_melodies_mechanisms.terracotta_disc_plate": "Terracotta Disc Plate",
   "item.create_melodies_mechanisms.netherrack_disc_plate": "Netherrack Disc Plate",
+  "item.create_melodies_mechanisms.calcite_disc_plate": "Calcite Disc Plate",
 
   "item.create_melodies_mechanisms.five_disc_plate": "5 Disc Plate",
   "item.create_melodies_mechanisms.eleven_disc_plate": "11 Disc Plate",
@@ -20,5 +21,7 @@
   "item.create_melodies_mechanisms.wait_disc_plate": "Wait Disc Plate",
   "item.create_melodies_mechanisms.otherside_disc_plate": "Otherside Disc Plate",
   "item.create_melodies_mechanisms.pigstep_disc_plate": "Pigstep Disc Plate",
-  "item.create_melodies_mechanisms.relic_disc_plate": "Relic Disc Plate"
+  "item.create_melodies_mechanisms.relic_disc_plate": "Relic Disc Plate",
+  "item.create_melodies_mechanisms.tears_disc_plate": "Tears Disc Plate",
+  "item.create_melodies_mechanisms.lava_chicken_disc_plate": "Lava Chicken Disc Plate"
 }

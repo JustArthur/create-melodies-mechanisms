@@ -1,35 +1,37 @@
 {
-  "schemaVersion": 1,
-  "id": "create_melodies_mechanisms",
-  "version": "1.0.0",
-  "name": "Create: Melodies & Mechanisms",
-  "description": "Craft and replicate music discs through elegant automation with Create's mechanical wonders.",
-  "authors": [
-    "su apt install Kuma"
-  ],
-  "contact": {
-    "homepage": "https://github.com/JustArthur/create-melodies-mechanisms",
-    "sources": ""
-  },
-  "license": "MIT License",
-  "icon": "assets/create_melodies_mechanisms/icon.png",
-  "accessWidener": "create_melodies_mechanisms.accesswidener",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "com.kuma.createmelodiesmechanisms.CreateMelodiesMechanismsMod"
-    ],
-    "client": [
-      "com.kuma.createmelodiesmechanisms.ClientInit"
-    ]
-  },
-  "depends": {
-    "fabricloader": ">=0.14.21",
-    "fabric": "*",
-    "minecraft": "~1.20",
-    "java": ">=17"
-  },
-  "mixins": [
-    "create_melodies_mechanisms.mixins.json"
-  ]
+	"schemaVersion": 1,
+	"id": "create_melodies_mechanisms",
+	"version": "${version}",
+	"name": "Create: Melodies & Mechanisms",
+	"description": "Craft and replicate music discs through elegant automation with Create's mechanical wonders.",
+	"authors": [
+		"su apt install Kuma"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/create-melodies-mechanisms",
+		"sources": "https://github.com/JustArthur/create-melodies-mechanisms"
+	},
+	"license": "MIT",
+	"icon": "assets/create_melodies_mechanisms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.suaptinstallkuma.create_melodies_mechanisms.CreateMelodiesMechanisms"
+		],
+		"client": [
+			"net.suaptinstallkuma.create_melodies_mechanisms.CreateMelodiesMechanismsClient"
+		],
+		"fabric-datagen": [
+			"net.suaptinstallkuma.create_melodies_mechanisms.CreateMelodiesMechanismsDataGenerator"
+		]
+	},
+	"mixins": [
+		"create_melodies_mechanisms.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
 }

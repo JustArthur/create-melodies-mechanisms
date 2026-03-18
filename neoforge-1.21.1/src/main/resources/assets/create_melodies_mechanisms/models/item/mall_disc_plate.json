@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "create_melodies_mechanisms:item/disc_plate_mall"
-  }
-}

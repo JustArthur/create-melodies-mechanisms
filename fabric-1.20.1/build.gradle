@@ -35,6 +35,10 @@ dependencies {
 	
 }
 
+sourceSets.main.resources {
+	srcDir('../commun')
+}
+
 processResources {
 	inputs.property "version", project.version
 

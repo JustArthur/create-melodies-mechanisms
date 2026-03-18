@@ -3,7 +3,8 @@ package net.suaptinstallkuma.create_melodies_mechanisms;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.loader.api.FabricLoader;
-import net.suaptinstallkuma.create_melodies_mechanisms.item.*;
+import net.suaptinstallkuma.create_melodies_mechanisms.item.ModItems;
+import net.suaptinstallkuma.create_melodies_mechanisms.item.ModItemsCompat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
